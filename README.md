@@ -25,3 +25,7 @@ digitados, porém de maneira invertida (do último para o primeiro).
 
 7 – Peça para o usuário digitar uma data. Exiba separadamente o dia, o mês e o
 ano. (Obs.: não necessita de laço de repetição)
+
+## Questões Teóricas 
+
+As questões teóricas se encontram resolvidas dentro da pasta de exercícios :pencil2:
