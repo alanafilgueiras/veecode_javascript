@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data</title>
+        
+    </head>
+    <body>
+        <h1>Escreva dia, mês e ano</h1>
+        Digite no formato: dia/mes/ano <input type="text" id="txtData">
+        <input type="button" value="Exibir" onclick="verificarData()">
+        <script>
+            function verificarData(){
+                var data = document.getElementById("txtData").value;
+                data = data.split("/");
+                document.write("Dia: "+data[0]+"<br>");
+                document.write("Mês: "+data[1]+"<br>");
+                document.write("Ano: "+data[2]+"<br>");
+            }
+        </script>
+
+    </body>
+</html>
