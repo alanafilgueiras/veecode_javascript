@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Do último ao primeiro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        Digite os nomes e separe-os por vírgula <input type="text" id="txtNomes">
+        <input type="button" value="Inverter" onclick="inverterNomes()">
+
+        <script>
+            function inverterNomes(){
+                var nomes = document.getElementById("txtNomes").value;
+                nomes = nomes.split(",");
+                
+               for(i=nomes.length-1;i>=0;i--){
+                document.write(nomes[i]+"<br>");
+            }
+        }
+        </script>
+        
+        
+    </body>
+</html>
