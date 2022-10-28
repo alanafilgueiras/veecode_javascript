@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual o maior?</title>
+</head>
+<body>
+    <h1>Descubra qual o número é o maior</h1>
+    Digite os numeros e separe-os por virgula <input type="text" id="txtNumeros">
+        <input type="button" value="Qual o Maior?" onclick="verificar()">
+    <script>
+        function verificar(){
+        listaDeNumeros = document.getElementById("txtNumeros").value;
+        listaDeNumeros = listaDeNumeros.split(",");
+        var maior = parseInt(listaDeNumeros[0]);
+        for(i=1;i<listaDeNumeros.length;i++){
+            if(parseInt(listaDeNumeros[i]) > maior){
+                maior = parseInt(listaDeNumeros[i]);
+                window.alert(`O maior número é ${maior}`);
+            }
+        }
+        
+        
+        }
+    </script>
+</body>
+</html>

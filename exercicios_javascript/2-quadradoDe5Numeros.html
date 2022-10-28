@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevando ao Quadrado</title>
+</head>
+<body>
+    <h1>Quadrado de 5 números</h1>
+    Digite os numeros e os separe-os por virgula <input type="text" id="txtNumeros">
+    <input type="button" value="Calcular Quadrado" onclick="calcularQuadrado()">
+    
+    <script>
+        function calcularQuadrado(){
+        var listaDeNumeros = document.getElementById("txtNumeros").value;
+        listaDeNumeros = listaDeNumeros.split(",");
+        for(i=0;i<listaDeNumeros.length;i++){
+            quadrado = parseInt(listaDeNumeros[i])*parseInt(listaDeNumeros[i]);
+            document.write("O quadrado de "+listaDeNumeros[i]+ " é "+quadrado+"<br>");
+        }
+        
+        }
+    
+    </script>
+</body>
+</html>

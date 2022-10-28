@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Médias</title>
+</head>
+<body>
+    <h1>Calcule aqui sua média</h1>
+
+    Digite a primeira nota: <input type="number" name="txtnota1" id="txtnota1"><br /><br />
+    Digite a segunda nota: <input type="number" name="txtnota2" id="txtnota2"><br /><br />
+    Digite a terceira nota: <input type="number" name="txtnota3" id="txtnota3"><br /><br />
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular(){
+        var txtnota1 = window.document.getElementById('txtnota1'); //a ligaçao entre o javascript e o html, a caixa de texto
+        var txtnota2 = window.document.getElementById('txtnota2');
+        var txtnota3 = window.document.getElementById('txtnota3');
+        var primeiraNota = Number(txtnota1.value); //pega o valor que foi digitado na caixa de texto
+        var segundaNota = Number(txtnota2.value);
+        var terceiraNota = Number(txtnota3.value);
+        var media = ((primeiraNota + segundaNota + terceiraNota)/3) ;
+        var res = window.document.querySelector('div#res');
+        res.innerHTML +=`<p> A sua média é ${media}<p>`;
+        }
+    </script>
+</body>
+</html>

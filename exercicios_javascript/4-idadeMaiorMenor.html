@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade Maior e Menor</title>
+</head>
+
+<body>
+    <h1>Descubra quantos são de Maior e quantos são de menor</h1>
+    Digite as idades e separe-as por vígula <input type="text" id="txtIdades">
+    <input type="button" value="verificar idade" onclick="verificarIdades()">
+
+    <script>
+        function verificarIdades() {
+            var idades = document.getElementById("txtIdades").value;
+            idades = idades.split(",");
+            var maiorIdade = 0;
+            var menorIdade = 0;
+            for (i = 0; i < idades.length; i++) {
+                if (parseInt(idades[i]) >= 18) {
+                    maiorIdade++;
+                } else {
+                    menorIdade++;
+                }
+            }
+            document.write("Maiores: " + maiorIdade + " - Menores: " + menorIdade);
+        }
+    </script>
+
+    <body>
+
+        
+
+
+    </body>
+
+</html>
